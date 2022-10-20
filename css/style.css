@@ -7,6 +7,7 @@
     display: grid;
     grid-template-columns: repeat(4, 100px);
     grid-gap: 10px;
+    justify-content: center;
 }
 
 /* ------------------Flip---------------------- */
@@ -48,3 +49,18 @@
 }
 
 /* ----------------------- --------------------- */
+
+@media screen and (max-width: 445px) {
+    .img{
+        width: 80px;
+        height: 120px;
+    }
+    .container__game-board{
+        grid-template-columns: repeat(4, 80px);
+        grid-gap: 5px;
+    }
+    .flip-container, .front , .back {
+        width: 80px;
+        height: 120px;
+    }
+}
